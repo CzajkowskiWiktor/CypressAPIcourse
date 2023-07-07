@@ -1,0 +1,39 @@
+{
+  "articles": [
+    {
+      "slug": "afdsdfgdrt234-1850",
+      "title": "Title 1",
+      "description": "2432",
+      "body": "123",
+      "tagList": [],
+      "createdAt": "2023-07-07T06:58:57.943Z",
+      "updatedAt": "2023-07-07T06:58:57.943Z",
+      "favorited": false,
+      "favoritesCount": 1,
+      "author": {
+        "username": "CyTestUser",
+        "bio": "2222",
+        "image": "https://i.stack.imgur.com/34AD2.jpg",
+        "following": false
+      }
+    },
+    {
+      "slug": "This-is-a-title-of-an-article-1850",
+      "title": "Title 2",
+      "description": "This is a description",
+      "body": "This is a text body",
+      "tagList": [],
+      "createdAt": "2023-07-05T13:36:09.187Z",
+      "updatedAt": "2023-07-05T13:36:09.187Z",
+      "favorited": false,
+      "favoritesCount": 5,
+      "author": {
+        "username": "CyTestUser",
+        "bio": "2222",
+        "image": "https://i.stack.imgur.com/34AD2.jpg",
+        "following": false
+      }
+    }
+  ],
+  "articlesCount": 1966
+}

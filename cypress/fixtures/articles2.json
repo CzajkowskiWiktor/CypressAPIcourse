@@ -1,0 +1,32 @@
+{
+  "article": {
+    "id": 290156,
+    "slug": "afdsdfgdrt234-1850",
+    "title": "afdsdfgdrt234",
+    "description": "2432",
+    "body": "123",
+    "createdAt": "2023-07-07T06:58:57.943Z",
+    "updatedAt": "2023-07-07T06:58:57.943Z",
+    "authorId": 1850,
+    "tagList": [],
+    "author": {
+      "username": "CyTestUser",
+      "bio": "2222",
+      "image": "https://i.stack.imgur.com/34AD2.jpg",
+      "following": false
+    },
+    "favoritedBy": [
+      {
+        "id": 1850,
+        "email": "artem.bondar16@gmail.com",
+        "username": "CyTestUser",
+        "password": "$2a$10$Ha61ZsnLtukQMADlw7WBt.iCSWOseepHG932J7kIXkD1sEw9u5pwG",
+        "image": "https://i.stack.imgur.com/34AD2.jpg",
+        "bio": "2222",
+        "demo": false
+      }
+    ],
+    "favorited": true,
+    "favoritesCount": 1
+  }
+}
