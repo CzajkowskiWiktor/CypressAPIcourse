@@ -1,8 +1,14 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
+  projectId: 'obgcdn',
   viewportHeight: 1080,
   viewportWidth: 1920,
+  env: {
+    userEmail: 'artem.bondar16@gmail.com',
+    password: 'CypressTest1',
+    apiUrl: 'https://api.realworld.io'
+  },
 
   e2e: {
     baseUrl: 'http://localhost:4200',

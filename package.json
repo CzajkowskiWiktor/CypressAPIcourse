@@ -8,7 +8,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint --force",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cy:open_dev": "npx cypress open --env userEmail=cytest3@test.com,password=Welcome000",
+    "cy:open_qa": "npx cypress open --env userEmail=test4@test.com,password=Welcome001"
   },
   "engines": {
     "node": "^14.20.0 || ^16.13.0 || ^18.10.0"

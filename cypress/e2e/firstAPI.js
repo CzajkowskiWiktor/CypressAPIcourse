@@ -128,12 +128,12 @@ describe('Test with backend', () =>
         }
 
         //requests API login and creating an article
-        cy.request('POST', 'https://api.realworld.io/api/users/login', userCred).its('body').then(body =>
+        cy.request('POST', Cypress.env("apiUrl")+'/api/users/login', userCred).its('body').then(body =>
         {
             const token = body.user.token
 
             cy.request({
-                url: "https://api.realworld.io/api/articles/",
+                url: Cypress.env("apiUrl")+"/api/articles/",
                 headers: { "Authorization": "Token " + token },
                 method: "POST",
                 body: bodyRequest
@@ -166,7 +166,7 @@ describe('Test with backend', () =>
         
     })
 
-    it.only('delete a new article in a global feed with APU login authorization', () =>
+    it('delete a new article in a global feed with APU login authorization', () =>
     {
         const bodyRequest = {
             "article": {
@@ -181,7 +181,7 @@ describe('Test with backend', () =>
         cy.get('@token').then(token =>
         {
             cy.request({
-                url: "https://api.realworld.io/api/articles/",
+                url: Cypress.env("apiUrl")+"/api/articles/",
                 headers: { "Authorization": "Token " + token },
                 method: "POST",
                 body: bodyRequest
@@ -200,7 +200,7 @@ describe('Test with backend', () =>
 
             //verify if the article has been deleted
             cy.request({
-                url: 'https://api.realworld.io/api/articles?limit=10&offset=0',
+                url: Cypress.env("apiUrl")+'/api/articles?limit=10&offset=0',
                 headers: { "Authorization": "Token " + token },
                 method: "GET"
             }).its('body').then( body => 
